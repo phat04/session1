@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Hồ sơ thông tin cá nhân</h1>
+
+    <form action="/">
+      <fieldset>
+        <legend>Thông tin cá nhân:</legend>
+        <label for="name">Tên</label>
+        <input
+          type="text"
+          placeholder="Nhập họ và tên..."
+          id="name"
+          name="name"
+        />
+        <br />
+        <label for="birthday">Ngày sinh</label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Thông tin liên hệ:</legend>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          placeholder="example@email.com"
+          id="email"
+          name="email"
+        />
+        <br />
+        <label for="phone">Số điện thoại</label>
+        <input
+          type="tel"
+          placeholder="Nhập số điện thoại..."
+          id="phone"
+          name="phone"
+        /><br /><br />
+      </fieldset>
+      <br />
+      <label for="extra">Ghi chú bổ sung:</label>
+      <br />
+      <textarea
+        name="extra"
+        id="extra"
+        placeholder="Nhập ghi chú của bạn tại dây..."
+        cols="50"
+        rows="5"
+      ></textarea>
+      <br />
+      <input type="submit" value="Lưu hồ sơ" />
+    </form>
+  </body>
+</html>
