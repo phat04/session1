@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Khảo sát dịch vụ khách hàng</h1>
+
+    <form action="/">
+      <label for="birthday">Độ tuổi của bạn:</label>
+      <input type="text" id="birthday" name="birthday" /><br /><br />
+      <fieldset>
+        <legend>Giới tính của bạn là gì:</legend>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Nữ</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Khác</label><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Dịch vụ bạn đang quan tâm: (có thể chọn nhiều)</legend>
+        <input type="checkbox" id="service1" name="services" value="service1" />
+        <label for="service1">Website</label>
+        <input type="checkbox" id="service2" name="services" value="service2" />
+        <label for="service2">Mobile App</label>
+        <input type="checkbox" id="service3" name="services" value="service3" />
+        <label for="service3">Marketing</label><br /><br />
+      </fieldset>
+      <label for="nation">Quốc gia bạn đang sinh sống:</label>
+      <select name="nation" id="nation">
+        <option value="">--Chọn quốc gia--</option>
+        <option value="vn">Việt Nam</option>
+        <option value="us">Hoa Kỳ</option>
+        <option value="jp">Nhật Bản</option>
+      </select>
+    </form>
+  </body>
+</html>
