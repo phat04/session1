@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="submit">
+      <fieldset>
+        <h3>Chi Tiết Hóa Đơn Mua Hàng</h3>
+        <table>
+          <caption>
+            Hóa Đơn Điện tử
+          </caption>
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Chi tiết</th>
+              <th>Đơn giá</th>
+              <th>Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Áo thun lập trình viên</td>
+              <td>
+                <ul>
+                  <li>Màu sắc: Đen</li>
+                  <li>Kích thước: L</li>
+                  <li>Chất liệu: Cotton</li>
+                </ul>
+              </td>
+              <td>200.000</td>
+              <td>200.000</td>
+            </tr>
+            <tr>
+              <td>Bàn phím cơ bản</td>
+              <td>
+                <ul>
+                  <li>Switch: Red</li>
+                  <li>Layout: ANSI</li>
+                </ul>
+              </td>
+              <td>800.000</td>
+              <td>800.000</td>
+            </tr>
+            <tr>
+              <td colspan="3" style="text-align: right">
+                Tổng tiền thanh toán: 1.050.000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr />
+        <h3>Đánh giá trải nghiệm mua hàng</h3>
+        <fieldset>
+          <legend>Trải nghiệm mua hàng</legend>
+          <label for="star">Mức độ hài lòng:</label>
+          <select id="star" name="star">
+            <option value="">Chọn mức độ hài lòng</option>
+            <option value="1">1 sao</option>
+            <option value="2">2 sao</option>
+            <option value="3">3 sao</option>
+            <option value="4">4 sao</option>
+            <option value="5">5 sao</option>
+          </select>
+          <br /><br />
+          <label for="complain">Ý kiến đóng góp:</label>
+          <br />
+          <textarea
+            id="complain"
+            name="complain"
+            rows="4"
+            cols="50"
+            placeholder="hãy chia sẻ trải nghiệm của bạn về sản phẩm và dịch vụ..."
+          ></textarea>
+        </fieldset>
+        <input type="submit" value="Gửi đánh giá" />
+      </fieldset>
+    </form>
+  </body>
+</html>
