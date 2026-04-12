@@ -1,0 +1,43 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: rgba(255, 166, 0, 0.375);
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    align-items: center;
+
+    p::before {
+      content: "“";
+      font-size: 40px;
+      color: #888;
+      margin-right: 5px;
+
+      div::first-letter {
+        font-size: 2em;
+        color: #e74c3c;
+        font-weight: bold;
+      }
+    }
+
+    p::after {
+      content: "“";
+      font-size: 40px;
+      color: #888;
+      margin-right: 5px;
+    }
+
+    strong {
+      font-size: 24px;
+      color: #ff6600;
+    }
+  }
+}
