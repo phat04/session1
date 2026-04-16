@@ -1,0 +1,120 @@
+// Biến màu sắc
+$blue-primary: #007bff;
+$green-success: #28a745;
+$bg-light: #f8f9fa;
+$text-white: #ffffff;
+
+.booking-section {
+  padding: 50px 0;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 15px;
+  }
+}
+
+.booking-wrapper {
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  // MẶC ĐỊNH (Mobile): Cột dọc đảo ngược (Form lên trên)
+  flex-direction: column-reverse;
+
+  // PC (Trên 768px): Hàng ngang đảo ngược (Info trái, Form phải)
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.info-column {
+  flex: 1;
+  background-color: $blue-primary;
+  color: $text-white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .brand-name {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .description {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
+  }
+
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 12px;
+      padding-left: 25px;
+      position: relative;
+      &::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.form-column {
+  flex: 1;
+  background-color: $text-white;
+  padding: 40px;
+
+  .form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555;
+    }
+    input,
+    select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      outline: none;
+      &:focus {
+        border-color: $blue-primary;
+      }
+    }
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: $green-success;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1.1rem;
+
+    &:hover {
+      background-color: darken($green-success, 10%);
+    }
+  }
+}
