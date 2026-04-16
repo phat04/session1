@@ -1,0 +1,74 @@
+$primary-green: #00b894;
+$bg-light: #f1f3f5;
+$white: #ffffff;
+$text-gray: #636e72;
+
+.team-section {
+  background-color: #ebedef;
+  padding: 60px 20px;
+  text-align: center;
+
+  .section-title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #2d3436;
+  }
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background-color: $white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  border-top: 5px solid $primary-green; // Thanh màu xanh phía trên
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+
+  flex: 1 1 300px;
+
+  min-width: 280px;
+
+  .avatar-wrapper {
+    width: 100px;
+    height: 100px;
+    background-color: #dfe6e9;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  .name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #2d3436;
+  }
+
+  .role {
+    font-size: 13px;
+    font-weight: bold;
+    color: $primary-green;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+
+  .desc {
+    font-size: 14px;
+    color: $text-gray;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+}
