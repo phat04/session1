@@ -1,0 +1,23 @@
+$bg-dark: #2c2c2c;
+$gap: 10px;
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-content: space-between;
+
+  height: 500px;
+  padding: 20px;
+  gap: $gap;
+
+  background: $bg-dark;
+
+  img {
+    width: 32%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
