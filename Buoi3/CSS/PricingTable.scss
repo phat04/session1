@@ -1,0 +1,84 @@
+$primary: #3498db;
+$highlight-bg: #eaf4ff;
+$text-dark: #2c3e50;
+$border: #dcdcdc;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+
+  .plan {
+    width: 18rem;
+    background: white;
+    border: 1px solid $border;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    transition: 0.3s;
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: $text-dark;
+      margin-bottom: 1rem;
+      transition: 0.3s;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $text-dark;
+      margin-bottom: 1.5rem;
+
+      span {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      padding: 0.7rem 0;
+      border-top: 1px solid #eee;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 0.3rem;
+      background: $primary;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    /* Hover */
+    &:hover {
+      border-color: $primary;
+
+      h3 {
+        font-weight: 700;
+      }
+    }
+
+    /* Cột giữa tự động nổi bật */
+    &:nth-child(2) {
+      background: $highlight-bg;
+      border: 2px solid $primary;
+
+      h3 {
+        color: #1565c0;
+        font-weight: 700;
+      }
+    }
+  }
+}
