@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+
+    <title>Dark Mode Tour</title>
+  </head>
+
+  <body
+    class="bg-gray-100 dark:bg-[#081028] transition duration-500 min-h-screen flex justify-center items-center p-10"
+  >
+    <!-- Wrapper -->
+    <div class="relative w-full max-w-5xl flex justify-center items-center">
+      <!-- Card -->
+      <div
+        class="w-[320px] rounded-2xl p-8 shadow-xl bg-white text-gray-800 dark:bg-[#1b2a41] dark:text-white transition duration-500"
+      >
+        <h2 class="text-3xl font-bold text-center mb-2">Tour Đà Lạt</h2>
+
+        <p class="text-center text-gray-500 dark:text-gray-300 mb-6">
+          3 Ngày 2 Đêm
+        </p>
+
+        <!-- Price -->
+        <div class="text-center mb-8">
+          <span class="text-5xl font-bold text-blue-600"> 2.500.000đ </span>
+
+          <span class="text-lg text-gray-500 dark:text-gray-300"> /khách </span>
+        </div>
+
+        <!-- Features -->
+        <ul class="space-y-4 mb-8 text-lg">
+          <li>Khách sạn 4 sao trung tâm</li>
+          <li>Xe Limousine đưa đón tận nơi</li>
+          <li>Vé tham quan tất cả các điểm</li>
+        </ul>
+
+        <!-- Button -->
+        <button
+          class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition"
+        >
+          ĐẶT TOUR NGAY
+        </button>
+      </div>
+
+      <!-- Dark Mode Button -->
+      <button
+        onclick="document.documentElement.classList.toggle('dark')"
+        class="absolute bottom-0 right-0 bg-gray-200 dark:bg-gray-700 dark:text-white px-5 py-3 rounded-full shadow-lg font-semibold transition"
+      >
+        Đổi Giao Diện
+      </button>
+    </div>
+  </body>
+</html>
